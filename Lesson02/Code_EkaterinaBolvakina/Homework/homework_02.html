@@ -51,15 +51,24 @@
                         <br>
                         <label for="password">Passwort*: </label>
                         <input type="password" name="password" placeholder="zwischen 7 und 10 Symbolen">
+                        <br>
                         <tr> 
                             <td>
-                                    <label for="buyRent">Bitte auswählen:</label>
+                                Bitte auswählen:
                                 <br>
-                                <select name="buyRent" multiple>
-                                    <option value="buy">Kaufen</option>
-                                    <option value="rent" selected>Mieten</option>
-                                    <option value="build">Bauen</option>
-                                </select>
+                                <label >
+                                    Kaufen
+                                    <input type="checkbox" name="buy" value="true">
+                                </label>
+                                <label >
+                                    Mieten
+                                    <input type="checkbox" name="rent" value="true">
+                                </label>
+                                <label >
+                                    Bauen
+                                    <input type="checkbox" name="build" value="true">
+                                </label>
+                                <br>
                                 <br>
                                 <label for="category">Kategorie:</label>
                                 <br>
