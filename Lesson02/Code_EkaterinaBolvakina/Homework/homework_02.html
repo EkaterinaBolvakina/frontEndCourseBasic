@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ImmoWelt Nord-Deutschland</h1>
+<hr>
+<table>
+    <tr>
+        <td>
+            <tr>
+                    <h3>Anmeldeformular</h3>
+            </tr>
+            <tr>
+                    <form method="post">
+                        <input type="text" name="greeting1" value="Bitte ausfüllen..." disabled>
+                        <br>
+                        <br>
+                        <label for="firstName" >Vorname*: </label>
+                            <input type="text" name="firstName">
+                        <label for="lastName" >Nachname*: </label>
+                            <input type="text" name="lastName">
+                            <br>
+                            <br>
+                        <label> Geburtsdatum*:
+                            <input type="date" name="dateOfBirthday">  
+                        </label>    
+                        <br>
+                        <br>
+                        Geschlecht: 
+                        <br>
+                        <label> männlich
+                            <input type="radio" name="gender" value="male" checked>
+                        </label>
+                        <label> weiblich
+                            <input type="radio" name="gender" value="female">
+                        </label>
+                        <label> divers
+                            <input type="radio" name="gender" value="divers">
+                        </label>
+                        <label> keine Angabe
+                            <input type="radio" name="gender" value="noInput">
+                        </label>
+                        <br>
+                        <br>
+                        <label for="email">Email*: </label>
+                        <input type="email" name="email" placeholder="xx.xxxx@gmail.com">
+                        <br>
+                        <label for="password">Passwort*: </label>
+                        <input type="password" name="password" placeholder="zwischen 7 und 10 Symbolen">
+                        <tr> 
+                            <td>
+                                    <label for="buyRent">Bitte auswählen:</label>
+                                <br>
+                                <select name="buyRent" multiple>
+                                    <option value="buy">Kaufen</option>
+                                    <option value="rent" selected>Mieten</option>
+                                    <option value="build">Bauen</option>
+                                </select>
+                                <br>
+                                <label for="category">Kategorie:</label>
+                                <br>
+                                <select name="category" multiple>
+                                    <option value="flat">Wohnung</option>
+                                    <option value="house" selected>Haus</option>
+                                    <option value="property">Grundstück</option>
+                                    <option value="office">Büros / Praxen</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <br>
+                            <tr>
+                                <td>
+                            <label for="clientText">Zusätzliche Angaben:</label>
+                            <br>
+                            <textarea name="clientText" cols="70" rows="10" maxlength="100" placeholder="Bitte geben Sie hier den Text ein (bis zu 100 Symbolen)..."></textarea>
+                            <br>
+                        <button type="submit">Absenden</button>
+                        <input type="reset" value="Eingaben löschen">
+                                </td>
+                            </tr>
+                    </form>
+            </tr>
+        </td> 
+        <td>
+            <img src="https://plus.unsplash.com/premium_photo-1661773740829-2a289d97e792?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1pbi1zYW1lLXNlcmllc3wxfHx8ZW58MHx8fHx8" alt="Hauptbild">
+        </td>
+    </tr>
+</table>    
+</body>
+</html>
