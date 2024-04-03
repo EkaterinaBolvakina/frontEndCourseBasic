@@ -1,0 +1,81 @@
+.container {
+    display: flex;
+}
+body {
+    background-color: rgba(102, 139, 191, 0.358);
+    background-image: url("./istockphoto-1323369382-612x612.jpg");
+    /*  
+    background-image: url(https://media.istockphoto.com/id/1323369382/de/foto/sammlung-von-bunten-sommer-gefrorenedesserts-unteren-rand-auf-einem-rosa-hintergrund.jpg?s=612x612&w=0&k=20&c=jju_r2CAyovgtQQxj6iYuT2jXo03sGUpDj5rA1q5yeY=);
+    background-size: cover; 
+    background-position: center; 
+     */
+}
+
+.div1, .div2, .div3 {
+    box-sizing: border-box;
+    width: 350px;
+    height: 300px;
+    border: 2px;
+    padding: 20px;
+    margin-top: 250px;
+    margin-left: 30px;
+}
+
+.div1 {
+    background-color: rgb(234, 204, 159);
+    border-radius: 65px;
+    border-color: rgb(150, 105, 195);
+    border-style: double;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    color: rgba(157, 40, 40, 0.738);
+    padding-top: 110px;
+    margin-left: 400px;
+}
+
+.div2 {
+    background-color: rgb(160, 220, 200);
+    border-radius: 65px;
+    border-color: coral;
+    border-style: dotted;
+    text-align: center;
+    font-weight: bold;
+    font-size: 2vh;
+    color: rgba(157, 40, 40, 0.738);
+    padding-top: 100px;
+}
+
+.div3 {
+    background-color: rgb(193, 158, 225);
+    border-radius: 65px;
+    border-color: rgb(80, 137, 78);
+    border-style: groove;
+    font-size: 2vh;
+    font-weight: bold;
+    color: rgba(157, 40, 40, 0.738);
+    text-align: center;
+    padding-top: 100px;
+}
+.custom-input {
+    border: 2px solid rgb(123, 123, 123); /* Farbe des Rahmens */
+    border-radius: 10px; /* Radius der Ecken */
+    padding: 8px; /* Innenabstand des Rahmens */
+}
+#lastNameId {
+    margin-top: 30px;
+}
+
+.radio-label input[type="radio"] {
+    display: flexbox;
+}
+
+.radio-label {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 50%;
+}
+
+.radio-label:hover {
+    background-color: lightgray;
+}

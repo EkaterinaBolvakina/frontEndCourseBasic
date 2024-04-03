@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div class="container">
+    <div class="div1">
+        <label for="firstNameId">First name: </label>
+        <input type="text" class="custom-input" id="firstNameId" name="firstName" placeholder="First name">
+        <br>
+        <label for="lastNameId">Last name: </label>
+        <input type="text" class="custom-input" id="lastNameId" name="lastName" placeholder="Last name">
+    </div>
+
+    <div class="div2">
+        <label for="ageId">Age: </label>
+        <br>
+        <br>
+        <select class="custom-input" name="age" id="ageId">
+            <option value="">Select age: </option>
+            <!-- JavaScript generiert Optionen von 0 bis 100 -->
+        </select>
+    </div>
+    
+    <script>
+        var select = document.getElementById("ageId");
+        for (var i = 0; i <= 100; i++) {
+            var option = document.createElement("option");
+            option.text = i;
+            option.value = i;
+            select.appendChild(option);
+        }
+    </script>
+
+    <div class="div3"> 
+    Favorite ice cream: 
+    <br>
+    <br>
+    <label class="radio-label"> Vanilla
+        <input type="radio" name="favoriteIceCream" value="vanilla" checked>
+    </label>
+    <label class="radio-label"> Chocolate
+        <input type="radio" name="favoriteIceCream" value="chocolate">
+    </label>
+    <label class="radio-label"> Strawberry
+        <input type="radio" name="favoriteIceCream" value="strawberry">
+    </label>
+    <label class="radio-label"> Neopolitan
+        <input type="radio" name="favoriteIceCream" value="neopolitan">
+    </label>
+    <label class="radio-label"> love all
+        <input type="radio" name="favoriteIceCream" value="noInput">
+    </label>
+    </div>
+</div>
+    
+</body>
+</html>
