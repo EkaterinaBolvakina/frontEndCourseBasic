@@ -1,88 +1,104 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-.boby {
-    position: relative;
+    box-sizing: border-box;
 }
 
 .header {
-    position: relative;
-    height: 150px;
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 170px;
     padding-top: 20px;
-    margin-bottom: 10px;
+    z-index: 1000;
+}
+
+.main {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    top: 170px;
+    display: flex;
+    flex-direction: column;
 }
 
 .toolBar {
     position: relative;
     height: 30px;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 100%;
 }
 
-.toolBar ul {
+.icons {
+    position: absolute;
+    left: 1600px;
+    top: -6px;
+    width: 140px;
+    height: 30px;
+}
+
+.language {
+    position: absolute;
+    left: 1750px;
+    top: -4px;
+    width: 72px;
+    height: 30px;
+}
+
+.language .optionBorder {
+    border: none;
+    color: #3f3f3f;
+}
+
+.icons ul {
     list-style: none;
     display: flex;
 }
 
-.toolBar ul li {
+.icons ul li {
     margin-right: 10px;
 }
 
 .socialIcons {
-    position: relative;
-    top: -10px;
-    left: 1500px;
     width: 25px;
     height: 25px;
-    box-sizing: border-box;
-}
-
-.language {
-    position: relative;
-    top: -11px;
-    right: 130px;
-}
-
-.optionBorder {
-   border: none;
-   color: #3f3f3f;
 }
 
 .headerLayoutNavigation {
-    position: fixed;
-    display: inline-flex;
     height: 100px;
-    width: 100%; /* Verwende 100% der Breite */
-    box-sizing: border-box;
+    width: 100%;
+    /* Verwende 100% der Breite */
     background-color: #f6f1f6;
-    align-items: center; /* Zentriere die Elemente vertikal */
-    justify-content: space-evenly; /* Verteile die Elemente horizontal */
     font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;
+    /* Zentriere die Elemente vertikal */
+    justify-content: space-evenly;
+    /* Verteile die Elemente horizontal */
+    flex-wrap: wrap;
     z-index: 1000;
 }
 
 .navigation1 {
+
     margin-left: 300px;
 }
 
 .navigation2 {
+
     margin-left: -40px;
 }
 
 .navigation3 {
+
     margin-left: -20px;
 }
 
 .navigation6 {
+
     margin-right: 300px;
 }
 
 .logo {
-    box-sizing: border-box;
     height: 64px;
     width: 78px;
     background-color: #000000;
@@ -93,9 +109,10 @@
 }
 
 .annoancmentSlider {
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #000000;
     color: #ffffff;
     font-size: 15.3px;
@@ -108,10 +125,14 @@
 .mainContent {
     margin-top: 40px;
     margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
 }
 
 .sectionHeader {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sectionHeaderTitle {
@@ -119,31 +140,27 @@
 }
 
 .headerText {
-    margin-left: 550px;
     width: 800px;
+    text-align: center;
 }
 
 .section {
-    box-sizing: border-box;
-    display: inline-flex;
-    position: relative;
     padding: 50px;
     margin-top: 70px;
     margin-left: 200px;
     margin-right: 200px;
-    align-items: center; /* Zentriere die Elemente vertikal */
-    justify-content: space-evenly; /* Verteile die Elemente horizontal */
+    width: 1480px;
+    height: 599.250px;
     font-family: 'Times New Roman', Times, serif;
     background-color: #f6f1f6;
+    display: flex;
+    flex-direction: raw;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .textContent {
-    box-sizing: border-box;
-    position: relative;
-    left: 150px;
-    right: 5px;
-    width: 500px;
-    height: 300px;
+    width: 400px;
 }
 
 .titleContent1 {
@@ -175,26 +192,32 @@
 }
 
 .imageContent {
-    box-sizing: border-box;
+    width: 50%;
     position: relative;
-    margin-right: -10px;
 }
 
-img {
-    position: relative;
-    right: -500px;
-    width: 50%; 
+.image {
+    width: 85%;
+    position: absolute;
+    top: -270px;
+    left: 120px;
 }
 
 .siteFooter {
-    box-sizing: border-box;
-    display: block;
-    text-align: center;
-    background-color: #000000;
+    position: absolute;
+    top: 1200px;
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000e3;
+}
+
+.footer-content {
     color: #ffffff;
     font-size: 15.3px;
     padding-top: 3px;
-    height: 25px;
     font-family: 'Times New Roman', Times, serif;
     font-weight: bolder;
 }
