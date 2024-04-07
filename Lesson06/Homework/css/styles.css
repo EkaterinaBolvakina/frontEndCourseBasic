@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    height: 170px;
+    padding-top: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    margin-top: 170px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.toolBar {
+    position: relative;
+    height: 30px;
+    width: 100%;
+}
+
+.icons {
+    position: absolute;
+    left: 1600px;
+    top: -6px;
+    width: 140px;
+    height: 30px;
+}
+
+.language {
+    position: absolute;
+    left: 1750px;
+    top: -4px;
+    width: 72px;
+    height: 30px;
+}
+
+.language .optionBorder {
+    border: none;
+    color: #3f3f3f;
+}
+
+.icons ul {
+    list-style: none;
+    display: flex;
+}
+
+.icons ul li {
+    margin-right: 10px;
+}
+
+.socialIcons {
+    width: 25px;
+    height: 25px;
+}
+
+.headerLayoutNavigation {
+    height: 100px;
+    width: 100%;                     /* Verwende 100% der Breite */
+    background-color: #f6f1f6;
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    align-items: center;             /* Zentriere die Elemente vertikal */
+    justify-content: space-evenly;   /* Verteile die Elemente horizontal */
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.navigationBlock1, .navigationBlock2 {
+    width: 30%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.navigation2 {
+    cursor: pointer;
+}
+
+.navigation2 a {
+    text-decoration: none; 
+    color: inherit;
+}
+
+.navigation2 a:hover {
+    text-decoration: underline;
+}
+
+.logo {
+    height: 64px;
+    width: 78px;
+    background-color: #000000;
+    color: #ffffff;
+    padding-left: 5px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.logo a {
+    text-decoration: none; /* Entfernt die Unterstreichung */
+    color: inherit; /* Vererbt die Farbe des umgebenden Elements */
+}
+
+.logo a:hover {
+    text-decoration: underline; /* Fügt Unterstreichung bei Hover hinzu */
+}
+
+.annoancmentSlider {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 15.3px;
+    padding-top: 3px;
+    height: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.sectionHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sectionHeaderTitle {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.headerText {
+    width: 50%;
+    text-align: center;
+}
+
+.mainContent {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.section {
+    padding: 50px;
+    margin-top: 70px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1480px;
+    height: 699.250px;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f6f1f6;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap; 
+}
+.sectionArtists {
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    width: 1480px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.textContent {
+    width: 400px;
+    margin-left: 5%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleContent1 {
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.titleContent2 {
+    font-size: 150%;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.titleContent3 {
+    font-size: 150%;
+    margin-bottom: 20px;
+}
+
+.titleContent4 {
+    font-size: 150%;
+    font-weight: bolder;
+    margin-bottom: 30px;
+}
+
+.titleContent5 {
+    font-size: large;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.imageContent {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.imageContentArtists {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.image {
+    width: 50%;
+    margin-left: 12%;
+    margin-top: -1.4%;
+}
+
+.imageArtists {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000e3;
+}
+
+.footer-content {
+    color: #ffffff;
+    font-size: 15.3px;
+    padding-top: 3px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+
+.blockArtist {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.mainArtist {
+    width: 50%;
+    padding-left: 130px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    flex-wrap: wrap;
+}
+
+.asideArtist {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.textBlockAsideArtist {
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.imageArtist {
+width: 90%;
+}
+
+.imageArtistBlock {
+    font-family: 'Times New Roman', Times, serif;
+    color: #2a2828;
+}
+
+
