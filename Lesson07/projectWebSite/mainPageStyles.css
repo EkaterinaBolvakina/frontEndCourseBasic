@@ -1,0 +1,80 @@
+.main {
+    margin-top: 100px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.title-products-card-wrapper {
+    width: 90%;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
+
+.products-card-wrapper {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.book-imgage {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.product-description {
+    width: 120px;
+    min-height: 170px;
+}
+
+.bookTitle {
+    font-weight: bold;
+    margin-bottom: 9px;
+}
+
+.product-price {
+    font-weight: bold;
+    font-size: larger;
+}
+
+.aside {
+    display: flex;
+    align-content: center;
+}
+
+.aside-image-block {
+    width: 70%;
+}
+
+.aside-image {
+    width: 100%;
+    height: 100%;
+}
+
+.aside-text-block {
+    width: 70%;
+    background-color: #c1a7a7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside-text p {
+    color: #f7f2f5;
+    text-align: center;
+    font-size: 2vmax;
+}
