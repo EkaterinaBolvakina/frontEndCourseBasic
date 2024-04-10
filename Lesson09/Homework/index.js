@@ -18,9 +18,11 @@ const numbers = [2, 4, 6, 8, 10];
 let lastIndex = numbers.length - 1;
 
 for (let i = 0; i < numbers.length / 2; i++) {
-    let temp = numbers[i];
-    numbers[i] = numbers[lastIndex - i];
-    numbers[lastIndex - i] = temp;
+    if (i === 0) {
+        let temp = numbers[i];
+        numbers[i] = numbers[lastIndex];
+        numbers[lastIndex] = temp;
+    }
 }
 
 console.log(numbers);
