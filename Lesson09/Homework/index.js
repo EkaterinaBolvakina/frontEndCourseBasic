@@ -52,7 +52,7 @@ console.log('--------- Task 04* ---------');
 const numArray = [10, 15, 20, 25, 30];
 
 let sum = 0;
-for (let i=0; i < numArray.length; i++) {
+for (let i = 0; i < numArray.length; i++) {
     sum = numArray[i] + sum;
 }
 

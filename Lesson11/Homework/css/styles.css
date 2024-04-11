@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    padding: 20px;;
+    display: flex;
+    flex-direction: column;
+}
+
+.colourText {
+    color: #e30a0a;
+    font-weight: bolder;
+    font-size: large;
+}
+
+.productCardContainer {
+    width: 70%;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+}
+
+.productCard {
+    width: 25%;
+    margin-left: 10px;
+    border: #9d9296 solid 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 10%;
+
+}
+
