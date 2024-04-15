@@ -1,13 +1,16 @@
 //Task 01:
 console.log('--------- Task 01 ---------');
 
-const lines = ['-----------------------------------','I count to 5:', 'one', 'two', 'three', 'four', '...', 'Off to the weekend! Enjoy your books :-)'];
+const lines = ['-----------------------------------', 'I count to 5:', 'one', 'two', 'three', 'four', '...', 'Off to the weekend! Enjoy your books :-)'];
 
-for (let i = 0; i < lines.length; i++) {
-    const div = document.createElement('div');
-    div.innerText = lines[i];
-    document.body.appendChild(div);
+const createLines = (arrayString) => {
+    for (let i = 0; i < arrayString.length; i++) {
+        const div = document.createElement('div');
+        div.innerText = arrayString[i];
+        document.body.appendChild(div);
+    }
 }
+console.log(createLines(lines));
 
 //Task 02:
 console.log('--------- Task 02 ---------');
