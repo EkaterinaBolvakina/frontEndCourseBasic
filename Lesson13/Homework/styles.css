@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #9cafcf;
+}
+
+.header {
+    width: 100%;
+    padding: 2%;
+    background-color: #d8dbe2;
+    text-align: center;
+    color: #779ed3;
+}
+
+.calc-wrapper {
+    width: 70%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputBlock {
+    width: 100%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.fieldInput {
+    width: 400px;
+    height: 200px;
+    padding: 6%;
+    background-color: #e2e5ec;
+    border-radius: 2%;
+    border: #505370;
+    text-align: end;
+    font-size: 250%;
+    color: #505370;
+    overflow: auto; /* Falls der Text zu lang ist, wird ein Scrollbalken angezeigt */
+    white-space: pre-wrap; /* Der Text wird umgebrochen und Leerzeichen werden beibehalten */
+}
+
+.tabsBlock {
+    width: 400px;
+    padding: 2%;
+    border-radius: 2%;
+    background-color: #d8dbe2;
+    text-align: center;
+}
+
+.tab, .ac, .res {
+    margin: 4px;
+    width: 60px;
+    height: 60px;
+    font-size: 150%;
+    padding: 2px;
+    color: #505370;
+    border-radius: 50%;
+    border: 0;
+}
+
+.num {
+    color: #ae6969;
+}
+
+#ac {
+    color: #d71616;
+    font-weight: bold;
+}
+
+#res {
+    background-color: #779ed3;
+    color: #f8f1f1;
+    font-weight: bold;
+}
+
+.showResult {
+    font-size: 300%;
+    font-weight: bold;
+    color: #486fa6;
+    text-align: center;
+}
