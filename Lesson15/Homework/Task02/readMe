@@ -1,0 +1,11 @@
+Task 2:
+There is an array of products: each product is an object with the following fields: name, price, manufacturer. 
+(values can be set at your discretion), write a function to filter products price above 5000
+
+----------------- DE ------------------
+Es gibt eine Reihe von Produkten: jedes Produkt ist ein Objekt mit den folgenden Feldern: Name, Preis, Hersteller. 
+(Werte können nach eigenem Ermessen festgelegt werden), schreiben Sie eine Funktion, um die Waren nach Preis über 5000 zu filtern.
+
+----------------- RU ------------------
+Есть массив продуктов: каждый продукт - это объект с полями: имя, цена, производитель 
+(значения можно задать на свое усмотрение), написать функцию фильтрации продуктов цена выше 5000

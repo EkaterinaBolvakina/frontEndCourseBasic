@@ -1,0 +1,14 @@
+Task 2:
+Build a page with products from the previous task: products are displayed one by one - 
+layout at your discretion, add an input where the user can enter the price - 
+after entering, products are filtered by price less or equal to the price specified by the user
+
+----------------- DE ------------------
+Erstellen Sie eine Seite mit den Produkten aus der vorherigen Aufgabe: Die Produkte werden nacheinander angezeigt - 
+Fügen Sie nach eigenem Ermessen ein Eingabefeld hinzu, in das der Benutzer den Preis eingeben kann - 
+nach der Eingabe werden die Produkte nach dem Preis gefiltert, der kleiner oder gleich dem vom Benutzer angegebenen Preis ist
+
+----------------- RU ------------------
+Сверстать страничку с продуктами из предыдущей задачи: продукты отображаются один за другим - 
+верстка на ваше усмотрение, добавить инпут, куда пользователь может ввести цену - 
+после ввода продукты фильтруются по цене меньше или равно указанной пользователем

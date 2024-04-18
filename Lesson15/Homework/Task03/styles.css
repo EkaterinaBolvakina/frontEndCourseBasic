@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #858996;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.filterDiv {
+    margin-top: 100px;
+    margin-bottom: 50px;
+    color: #ebeaf0;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#inputForPriceFilterUpToId,
+#inputForPriceFilterFromId {
+    width: 220px;
+    height: 30px;
+    margin-top: 5px;
+    text-align: left;
+    padding-left: 4px;
+    font-size: 100%;
+    border-radius: 3%;
+    border: solid 0px;
+    background-color: #caccd2;
+    box-shadow: 0 0 5px rgb(67, 81, 97);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#btnForPriceFilterId,
+#btnForPriceFilterResetId {
+    width: 445px;
+    height: 30px;
+    margin-top: 5px;
+    font-weight: bolder;
+    font-size: 90%;
+    color: #4a4952;
+    box-shadow: 0 0 5px rgb(67, 81, 97);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.products-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divProduct {
+    margin: 40px;
+    padding: 15px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f499;
+    color: #4a4952;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(67, 81, 97);
+}
+
+.product-group,
+.product-name {
+    margin-top: 4px;
+    font-weight: bolder;
+}
+
+.product-price {
+    margin-top: 10px;
+    font-weight: bolder;
+    color: #302f35;
+}
