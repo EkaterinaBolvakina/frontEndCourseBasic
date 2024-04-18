@@ -80,3 +80,16 @@ body {
     font-weight: bolder;
     color: #302f35;
 }
+
+@media only screen and (max-width: 600px) {
+    /* Wenn die Bildschirmbreite maximal 600px beträgt (typischerweise Smartphones), werden die folgenden Regeln angewendet */
+    #inputForPriceFilterUpToId,
+    #inputForPriceFilterFromId {
+        width: 90px;
+    }
+
+    #btnForPriceFilterId,
+    #btnForPriceFilterResetId {
+        width: 186px;
+    }
+}
