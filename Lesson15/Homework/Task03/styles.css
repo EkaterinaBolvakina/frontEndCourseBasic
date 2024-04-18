@@ -85,11 +85,11 @@ body {
     /* Wenn die Bildschirmbreite maximal 600px beträgt (typischerweise Smartphones), werden die folgenden Regeln angewendet */
     #inputForPriceFilterUpToId,
     #inputForPriceFilterFromId {
-        width: 90px;
+        width: 120px;
     }
 
     #btnForPriceFilterId,
     #btnForPriceFilterResetId {
-        width: 186px;
+        width: 245px;
     }
 }
