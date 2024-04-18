@@ -26,7 +26,7 @@ body {
 
 #inputForPriceFilterUpToId,
 #inputForPriceFilterFromId {
-    width: 220px;
+    width: 150px;
     height: 30px;
     margin-top: 5px;
     text-align: left;
@@ -41,7 +41,7 @@ body {
 
 #btnForPriceFilterId,
 #btnForPriceFilterResetId {
-    width: 445px;
+    width: 305px;
     height: 30px;
     margin-top: 5px;
     font-weight: bolder;
