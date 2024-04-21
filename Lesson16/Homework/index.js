@@ -16,20 +16,22 @@ function showNoteItems() {
 
         const noteItemHtml = `
         <div class="noteItem">
-        <div class="divNote ${item.isDone ? 'note-done' : ''}">
+            <div class="divNote ${item.isDone ? 'note-done' : ''}">
             <p class="note" id="note-${item.id}">${item.name}</p>
             </div>
-            <div class="divEditBtn">
-                 <button class="btnEditNote" id="${item.id}">Edit</button>
-            </div>
-            <div class="divCheckBox">
-                 <label >Done
+            <div class="divNoteButtons">
+                 <div class="divEditBtn">
+                      <button class="btnEditNote" id="${item.id}">Edit</button>
+                 </div>
+                 <div class="divCheckBox">
+                      <label >Done
                         <input type="checkbox" class="doneCheckBox" id="${item.id}" ${item.isDone ? 'checked' : ''}>
-                 </label>
-            </div>
-            <div class="divDeleteBtn">
-                 <button class="btnDeleteNote" id="${item.id}">Delete</button>
-            </div>    
+                      </label>
+                 </div>
+                 <div class="divDeleteBtn">
+                      <button class="btnDeleteNote" id="${item.id}">Delete</button>
+                 </div>  
+            </div>       
         </div>
         `;
 
