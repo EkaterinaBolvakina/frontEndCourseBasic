@@ -151,7 +151,7 @@
     .divEditBtn,
     .btnDeleteNote,
     .btnEditNote {
-        width: 68px;
+        width: 80px;
         font-size: small;
     }
 }
