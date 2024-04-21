@@ -55,7 +55,7 @@ const addTodo = (todoName = '') => {
 
 const addTodoBtn = document.getElementById('add-todo-btn');
 const addTodoInput = document.getElementById('add-todo-input');
-addTodoBtn.addEventListener('click', () => {
+addNoteBtn.addEventListener('click', () => {
     const newTodoName = addTodoInput.value;
-    addTodo(newTodoName)
+    addNote(newTodoName)
 });
