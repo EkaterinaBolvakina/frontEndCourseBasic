@@ -19,7 +19,7 @@ Character.prototype.introduce = introduce;
 //--------------- WARRIOR -----------------------------
 // Erweiterte Konstruktorfunktion für den Krieger, die von Character erbt
 function Warrior(name, health,level, weapon) {
-    Character.call(this, name, health,level); // Verwende den Character-Konstruktor, um gemeinsame Eigenschaften zu initialisieren
+    Character.call(this, name, health,level); // Verwende den Character-Konstruktor, um gemeinsame Eigenschaften zu initialisieren (Funkcional'noe nasledovanie)
     this.weapon = weapon;                     // Füge die spezifische Eigenschaft weapon hinzu
 }
 
