@@ -23,7 +23,6 @@ function start() {
     const countMin = parseInt(document.getElementById('inputMin').value) || 0;
     const countSec = parseInt(document.getElementById('inputSec').value) || 0;
 
-
     const totalSeconds = countMin * 60 + countSec;
 
     if (totalSeconds === 0) {
@@ -31,21 +30,14 @@ function start() {
         return;
     }
 
-    const startTime = new Date();
-    const stopTime = startTime.setSeconds(startTime.getSeconds() + totalSeconds);
+    const startTime = Date.now(); // Aktuelle Zeit in Millisekunden
 
     countDown = setInterval(() => {
-        const now = new Date().getTime();
-        const remain = stopTime - now;
+        const now = Date.now(); // Aktuelle Zeit in Millisekunden
+        const elapsedSeconds = Math.floor((now - startTime) / 1000); // Verstrichene Sekunden seit dem Start
 
-        let min = Math.floor((remain % (1000 * 60 * 60)) / (1000 * 60));
-        let sec = Math.floor((remain % (1000 * 60)) / 1000);
-        sec = sec < 10 ? "0" + sec : sec;
-        min = min < 10 ? "0" + min : min;
-
-        document.getElementById('timer').innerHTML = min + ":" + sec;
-
-        if (remain < 0) {
+        let remainingSeconds = totalSeconds - elapsedSeconds;
+        if (remainingSeconds < 0) {
             clearInterval(countDown);
             document.getElementById('minDiv').innerHTML = '';
             document.getElementById('secDiv').innerHTML = '';
@@ -55,6 +47,14 @@ function start() {
             startBtn.innerHTML = 'Back to start';
             startBtn.removeEventListener('click', start);
             startBtn.addEventListener('click', backToStart);
+            return;
         }
+
+        let min = Math.floor(remainingSeconds / 60);
+        let sec = remainingSeconds % 60;
+        sec = sec < 10 ? "0" + sec : sec;
+        min = min < 10 ? "0" + min : min;
+
+        document.getElementById('timer').innerHTML = min + ":" + sec;
     }, 1000);
 }
