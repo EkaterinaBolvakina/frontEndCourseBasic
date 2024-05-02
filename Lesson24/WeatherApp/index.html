@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>WeatherApp</title>
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="search-form">
+            <div>
+                <input id="input-form-search" type="text" name="search" placeholder="    City...">
+            </div>
+            <div>
+                <button id="search-button-icon" type="submit"><img id="imgBtn"
+                        src="./image/search-button-png-file-download-free.png" alt="search button"></button>
+            </div>
+            <div>
+                <select id="language-select">
+                    <option value="en" selected>EN</option>
+                    <option value="de">DE</option>
+                    <option value="ru">RU</option>
+                </select>
+            </div>
+        </div>
+        <div id="content-wrapper"></div>
+        <div></div>
+        <div id="spinner" class="spinner"></div>
+    </div>
+
+</body>
+
+</html>
