@@ -49,8 +49,8 @@ function chooseCity() {
             const selectedCity = inputCity.value;
             const selectedLanguage = document.getElementById('language-select').value;
             urlWeatherTodayCity = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}&units=metric&lang=${selectedLanguage}`
-            const weatherData = await getWeatherData();
-            showWeatherToday(weatherData)
+            weatherTodayData = await getWeatherData();
+            showWeatherToday(weatherTodayData)
         } catch (error) {
             console.error('Error loading weather data:', error);
             contentBlock.textContent = 'Error loading weather data.';
@@ -61,30 +61,28 @@ function chooseCity() {
     });
 }
 
-function showWeatherToday(weatherData) {
+function showWeatherToday(weatherTodayData) {
     contentBlock.style.backgroundColor = '#38687b9a';
-    if (weatherData && weatherData.main && weatherData.wind) { // Überprüfen, ob Daten vorhanden sind
-        const weather = weatherData.weather[0];
+    if (weatherTodayData && weatherTodayData.main && weatherTodayData.wind) { // Überprüfen, ob Daten vorhanden sind
+        const weather = weatherTodayData.weather[0];
         const currentDate = new Date();
         const options = { weekday: 'short', day: '2-digit', month: 'short', year: 'numeric' };
         const selectedLanguage = languageSelect.value;
         const formattedDate = currentDate.toLocaleDateString(extractLanguageCode(selectedLanguage), options);
-        const windSpeed = weatherData.wind.speed;
-        const windDirection = getWindDirection(weatherData.wind.deg);
-
-        // Erstelle die Windrichtung-Icon-URL
+        const windSpeed = weatherTodayData.wind.speed;
+        const windDirection = getWindDirection(weatherTodayData.wind.deg);
         const windDirectionIcon = getWindDirectionIcon(windDirection);
 
         contentBlock.innerHTML = `
-            <div id="cityName"> ${weatherData.name} - ${formattedDate}</div>
+            <div id="cityName"> ${weatherTodayData.name} - ${formattedDate}</div>
             <div id="weatherTodayDescription">
                 <div> <img id="weatherIconToday" src="https://openweathermap.org/img/w/${weather.icon}.png" alt="Weather Icon"></div>
                 <div id="weatherDesc"> ${weather.description}</div>
                 <div> <img id="windSpeedIcon" src="./image/wind-speed-icon-6.jpg" alt="Speed Icon"></div>
                 <div id="windSpeed"> ${windSpeed} m/sec</div>
-                <div id="windDirection"> <img id="windDirectionIcon" src="${windDirectionIcon}" alt="${windDirection}"></div> <!-- Anzeigen der Windrichtung mit Icon -->
+                <div id="windDirection"><img id="windDirectionIcon" src="${windDirectionIcon}" alt="${windDirection}"></div>
             </div>
-            <div id="tempToday"> ${parseInt(weatherData.main.temp)}°C
+            <div id="tempToday"> ${parseInt(weatherTodayData.main.temp)}°C
         `;
     } else {
         contentBlock.textContent = "Weather information not available.";
@@ -128,8 +126,8 @@ function chooseLanguage() {
             const selectedCity = inputCity.value;
             const selectedLanguage = languageSelect.value;
             urlWeatherTodayCity = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}&units=metric&lang=${selectedLanguage}`;
-            const weatherData = await getWeatherData();
-            showWeatherToday(weatherData);
+            weatherTodayData = await getWeatherData();
+            showWeatherToday(weatherTodayData);
         } catch (error) {
             console.error('Error loading weather data:', error);
             contentBlock.textContent = 'Error loading weather data.';
