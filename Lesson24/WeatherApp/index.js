@@ -47,7 +47,7 @@ function chooseCity() {
 
         try {
             const selectedCity = inputCity.value;
-            const selectedLanguage = document.getElementById('language-select').value;
+            const selectedLanguage = languageSelect.value;
             urlWeatherTodayCity = `https://api.openweathermap.org/data/2.5/weather?q=${selectedCity}&appid=${apiKey}&units=metric&lang=${selectedLanguage}`
             weatherTodayData = await getWeatherData();
             showWeatherToday(weatherTodayData)
