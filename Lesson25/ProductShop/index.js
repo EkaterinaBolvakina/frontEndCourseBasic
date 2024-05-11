@@ -1,5 +1,7 @@
 const categoriesWrapper = document.getElementById('categories-wrapper');
 const productCardsWrapper = document.getElementById('product-cards-wrapper');
+const searchBtn = document.getElementById('imgBtn');
+const searchInput = document.getElementById('input-form-search')
 let categories = [];
 let products = [];
 
@@ -138,7 +140,38 @@ const start = async () => {
     }
 }
 
-start()
+async function searchProducts(query) {
+    showSpinner();
+    try {
+        const response = await fetch(`https://dummyjson.com/products/search?q=${query}`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
+        products = data.products;
+        displayProducts(products);
+    } catch (error) {
+        console.error('Error searching products:', error);
+        contentBlock.textContent = 'Error searching products.';
+    } finally {
+        hideSpinner();
+    }
+}
 
+function searchBtnSubscribeEvent() {
+    searchBtn.addEventListener('click', () => {
+        const query = searchInput.value.trim();
+        if (query !== '') {
+            searchProducts(query);
+        } else {
+            alert("Please enter a product.")
+        }
+    });
+}
+
+
+
+start();
+searchBtnSubscribeEvent();
 
 
