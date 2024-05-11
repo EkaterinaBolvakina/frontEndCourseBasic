@@ -137,3 +137,50 @@ body {
 #imgBtn {
     width: 90%;
 }
+
+.btnDivProductShowMore {
+    margin-top: 10px;
+}
+
+.divProductDetailsForm {
+    margin: 20px;
+    width: 100%;
+    background-color: #f7f6fb;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+} 
+
+#divAddProductToBag {
+    margin-left: 20px;
+    margin-top: -180px;
+}
+
+.productThumbnail {
+    width: 70%;
+    margin-bottom: 5px;
+}
+
+.carousel-content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.images-wrapper {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-image {
+    width: 80%;
+}
+
+.productCardWrapper {
+    margin-left: -140px;
+}
