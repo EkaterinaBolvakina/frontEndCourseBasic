@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.inputContainer {
+    width: 100%;
+    height: 200px;
+    background-color: #78aea0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#inputNoteId {
+    width: 700px;
+    height: 50px;
+    padding-left: 10px;
+    background-color: #fafcff;
+    border: solid 0px;
+    box-shadow: 0 0 5px rgb(67, 81, 97);
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.divNoteButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#btnAddNoteId {
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    border: solid 0px;
+    box-shadow: 0 0 5px rgb(67, 81, 97);
+    font-size: 20px;
+    color: #363c44;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#noteItemsBlockId {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.noteItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+    font-size: 20px;
+    color: #171b20;
+    ;
+}
+
+.divNote {
+    padding-left: 10px;
+    padding-top: 5px;
+    width: 700px;
+    height: 35px;
+    background-color: #a6dbdb;
+    padding-top: 3px;
+    border: solid 0px;
+    box-shadow: 0 0 2px rgb(67, 81, 97);
+}
+
+.divCheckBox {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
+    background-color: #9eb8b1;
+    color: #363c44;
+    border: solid 0px;
+    box-shadow: 0 0 4px rgb(67, 81, 97);
+    font-size: 15px;
+    text-align: center;
+}
+
+.divDeleteBtn,
+.divEditBtn {
+    width: 100px;
+    height: 35px;
+    margin-left: 10px;
+}
+
+.btnDeleteNote,
+.btnEditNote {
+    width: 100px;
+    height: 35px;
+    margin-left: 5x;
+    border: solid 0px;
+    box-shadow: 0 0 4px rgb(67, 81, 97);
+}
+
+.note-done {
+    text-decoration: line-through;
+    color: #999;
+    /* Optional: Ändere die Farbe des durchgestrichenen Textes */
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* Wenn die Bildschirmbreite maximal 600px beträgt (typischerweise Smartphones), werden die folgenden Regeln angewendet */
+    #inputNoteId {
+        width: 200px;
+    }
+
+    #btnAddNoteId {
+        width: 60px;
+    }
+
+    .noteItem {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .divNote {
+        margin-left: 20px;
+        width: 320px;
+    }
+
+    .divNoteButtons {
+        margin-top: 5px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+
+    }
+
+    .divCheckBox,
+    .divDeleteBtn,
+    .divEditBtn,
+    .btnDeleteNote,
+    .btnEditNote {
+        width: 80px;
+        font-size: small;
+    }
+}
