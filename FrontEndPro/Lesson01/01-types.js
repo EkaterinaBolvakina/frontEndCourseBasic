@@ -22,3 +22,9 @@ var primes3 = [2, 3, 5, 7, 'qwerty'];
 var primes4 = [2, 3, 5, 7];
 var primes5 = [2, 3, 5, 7];
 primes5.forEach(function (e, i) { return console.log(e); });
+var primes6 = [{ age: 20 }, { age: 15 }, { age: 3 }];
+var primes7 = [{ age: 20 }, 12, '34'];
+if (typeof (primes7[0]) == "object") {
+    primes7[0].age = 17;
+}
+

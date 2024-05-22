@@ -29,3 +29,10 @@ let primes3: (number | string) [] = [2, 3, 5, 7, 'qwerty'];
 let primes4: number [] | string [] = [2, 3, 5, 7];
 const primes5: number [] = [2, 3, 5, 7];
 primes5.forEach((e: number, i: number): void => console.log(e));
+let primes6: number [] | string [] | {age: number} [] = [{age: 20}, {age: 15}, {age: 3}];
+let primes7: (number | string | {age: number}) [] = [{age: 20}, 12, '34'];
+
+
+if (typeof(primes7[0]) == "object") {
+    primes7[0].age = 17;
+}
