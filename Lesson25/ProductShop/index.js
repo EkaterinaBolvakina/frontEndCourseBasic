@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let products = [];
 
     function getAllCategories() {
-        return fetch('https://dummyjson.com/products/categories')
+        return fetch('https://dummyjson.com/products/category-list')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
